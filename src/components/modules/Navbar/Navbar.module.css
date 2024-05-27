@@ -1,0 +1,178 @@
+.navBar{
+    display: block;
+    width: 100%;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 15px 10px var(--grayColor);
+}
+.navbar_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_right{
+    display: flex;
+    align-items: center;
+}
+.navbar_logo{
+display: block;
+}
+.navbar_logo_img{   
+    width: 180px;
+}
+.navbar_searchBar{
+display: flex;
+align-items: center;
+width: 600px;
+height: 2.5rem;
+border: 1px solid var(--grayColor);
+border-radius: 0.3rem;
+margin-right: 1rem;
+}
+.navbar_searchBar_icon{
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+}
+.navbar_searchBar_input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.navbar_left{
+    display: flex;
+    align-items: center;
+}
+.navbar_loginRegister{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 3rem;
+    width: 150px;
+    height: 2.5rem;
+    background-color: var(--grayColor);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbar_loginRegister:hover{
+    background-color: var(--secondary);
+    color: var(--whiteColor);
+}
+.navbar_loginRegister_icon{
+    margin-left: 0.3rem;
+    font-size: 1.3rem;
+}
+.navbar_loginRegister_text{
+    margin: 0 0.3rem;
+}
+.navbar_basket{
+    display: block;
+    position: relative;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbar_basket:hover{
+    color: var(--secondary);
+}
+.navbar_basket:hover .navbar_basket_number{
+    background-color: var(--secondary);
+    color: var(--whiteColor);
+}
+.navbar_basket_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -0.6rem;
+    top: -0.3rem;
+    background-color: var(--grayColor);
+    transition: all 0.4s ease-out;
+}
+.navbar_basket_icon{
+    font-size: 2rem;
+}
+
+.navbar_menu{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.navbar_category{
+    display: block;
+    margin-left: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.navbar_category:hover .navbar_category_items{
+    visibility: visible;
+    opacity: 1;
+}
+.navbar_category_title{
+    display: block;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbar_category_title:hover{
+    color: var(--secondary);
+}
+
+.navbar_category_items{
+    display: block;
+    position: absolute;
+    padding: 1rem;
+    width: 200px;
+    background-color: var(--whiteColor);
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar_category_item{
+    display: block;
+    margin-bottom: 1rem;
+}
+.navbar_category_link{
+    display: block;
+    text-decoration: none;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbar_category_link:hover{
+    color: var(--secondary);
+}
+
+.navbar_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.navbar_item{
+    margin-right: 1rem;
+}
+.navbar_item_link{
+    display: block;
+    text-decoration: none;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbar_item_link:hover{
+    color: var(--secondary);
+}
