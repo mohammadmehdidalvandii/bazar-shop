@@ -1,0 +1,17 @@
+.banner{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+}
+.banner_wrapper{
+    display: block;
+}
+.banner_logo{
+    display: block;
+}
+.banner_logo:first-child{
+    margin-bottom: 1rem;
+}
+.banner_logo_img{
+    width: 100%;
+}
