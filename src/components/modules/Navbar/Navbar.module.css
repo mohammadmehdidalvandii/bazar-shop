@@ -177,3 +177,105 @@ margin-right: 1rem;
 .navbar_item_link:hover{
     color: var(--secondary);
 }
+
+
+.navbarRes{
+    display: block;
+    width: 100%;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 15px 10px var(--grayColor);
+}
+.navbarRes_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbarRes_logo{
+    display: block;
+}
+.navbarRes_logo_img{
+    width: 180px;
+}
+.navbarRes_menu{
+    display: block;
+    padding: 0.4rem 0;
+}
+.navbarRes_menu_btn{
+    display: block;
+    font-size: 2rem;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    position: relative;
+}
+.navbarRes_menu_btn:hover{
+    color: var(--secondary);
+}
+.navbarRes_menu_items{
+    display: block;
+    width: 250px;
+    padding-right: 1rem;
+    background-color: var(--whiteColor);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 15px 10px var(--grayColor);
+    transition: all 0.7s linear;
+}
+.activeMenu{
+    display: block;
+    width: 250px;
+    padding-right: 1rem;
+    background-color: var(--whiteColor);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 15px 10px var(--grayColor);
+    transition: all 0.7s linear;
+}
+.navbarRes_item_btn{
+    display: block;
+    text-align: left;
+    margin-left: 0.4rem;
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+.navbarRes_item_btn:hover{
+    color: var(--secondary);
+}
+.navbarRes_items{
+    display: block;
+    width: 100%;
+}
+.navbarRes_item{
+    display: block;
+    margin-bottom: 1rem;
+}
+.navbarRes_item_link{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.navbarRes_item_link:hover{
+    color: var(--secondary);
+}
+.navbarRes_item_title{
+    display: block;
+    margin: 1.5rem 0;
+    font-family: var(--danaBlack);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+}

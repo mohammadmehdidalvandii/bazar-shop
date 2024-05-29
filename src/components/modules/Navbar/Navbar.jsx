@@ -1,14 +1,23 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
 import { MdSearch , MdShoppingCart } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
+import { FaUser , FaBars ,FaTimesCircle} from "react-icons/fa";
 
 
 function Navbar() {
+    const [navMenu , setNavMenu] = useState(false);
+
+    const handlerNavbarMenu = ()=>{
+        setNavMenu(!navMenu)
+    }
+    const handlerNavbarClose = ()=>{
+        setNavMenu(false)
+    }
   return (
     <>
-        <section className={style.navBar}>
+        <section className={`${style.navBar} ${'d-lg-block d-none'}`}>
             <div className="containers">
                 <div className={style.navbar_wrapper}>
                     <div className={style.navbar_right}>
@@ -57,6 +66,64 @@ function Navbar() {
                             <Link href='/' className={style.navbar_item_link}>درباره ما</Link>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section className={`${style.navbarRes} ${'d-block d-lg-none'}`}>
+            <div className="containers">
+                <div className={style.navbarRes_wrapper}>
+                    <Link href='/' className={style.navbarRes_logo}>
+                        <img src="/images/logo.png" alt="logo-images" className={style.navbarRes_logo_img} />
+                    </Link>
+                    {/* navbar left section navbar */}
+                    <div className={style.navbar_left}>
+                        <Link href='/LoginRegister' className={style.navbar_loginRegister}>
+                            <span className={style.navbar_loginRegister_icon}><FaUser/></span>
+                            <span className={style.navbar_loginRegister_text}>ورود</span>
+                            /
+                            <span className={style.navbar_loginRegister_text}>عضویت</span>
+                        </Link>
+                        <Link href='/' className={style.navbar_basket}>
+                            <span className={style.navbar_basket_number}>0</span>
+                            <span className={style.navbar_basket_icon}><MdShoppingCart/></span>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className={style.navbarRes_menu}>
+                    <span className={style.navbarRes_menu_btn} onClick={handlerNavbarMenu}>
+                        <FaBars/>
+                    </span>
+                    {navMenu && (
+                         <div className={navMenu ? style.activeMenu: style.navbarRes_menu_items}>
+                         <span className={style.navbarRes_item_btn} onClick={handlerNavbarClose}>
+                             <FaTimesCircle/>
+                         </span>
+                         <ul className={style.navbarRes_items}>
+                             <li className={style.navbarRes_item}>
+                                 <Link href='/' className={style.navbarRes_item_link}>خانه</Link>
+                             </li>
+                             <li className={style.navbarRes_item}>
+                                 <Link href='/' className={style.navbarRes_item_link}>درباره ما</Link>
+                             </li>
+                         </ul>
+                         <ul className={style.navbarRes_items}>
+                             <li className={style.navbarRes_items}>
+                                 <h6 className={style.navbarRes_item_title}>دسته بندی محصولات</h6>
+                             </li>
+                             <li className={style.navbarRes_item}>
+                                 <Link href='/' className={style.navbarRes_item_link}>خانه و آشپزخانه</Link>
+                             </li>
+                             <li className={style.navbarRes_item}>
+                                 <Link href='/' className={style.navbarRes_item_link}>لوازم برقی خانگی</Link>
+                             </li>
+                             <li className={style.navbarRes_item}>
+                                 <Link href='/' className={style.navbarRes_item_link}>مد وپوشاک</Link>
+                             </li>
+                         </ul>
+                     </div>
+                    )}
+                   
                 </div>
             </div>
         </section>
