@@ -1,0 +1,14 @@
+.discount{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+}
+.discount_link{
+    display: block;
+    width: 100%;
+}
+.discount_link_img{
+    display: block;
+    width: 100%;
+    border-radius: 0.7rem;
+}
