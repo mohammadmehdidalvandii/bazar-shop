@@ -4,6 +4,25 @@
     background-color: var(--whiteColor);
     box-shadow: 0 0 15px 10px var(--grayColor);
 }
+.nav_fixed{
+    display: block;
+    width: 100%;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 15px 10px var(--grayColor);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition:  background-color 0.4s ease-in-out;
+    animation: fadeInDownBig 0.4s ease-in-out ;
+}
+@keyframes fadeInDownBig {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      transform: none;
+    }
+  }
 .navbar_wrapper{
     display: flex;
     justify-content: space-between;

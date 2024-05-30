@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
 import { MdSearch , MdShoppingCart } from "react-icons/md";
@@ -8,6 +8,21 @@ import { FaUser , FaBars ,FaTimesCircle} from "react-icons/fa";
 
 function Navbar() {
     const [navMenu , setNavMenu] = useState(false);
+    const [navbarFixedTop , setNavbarFixedTop] = useState(false)
+
+    // handler navbar Fixed To Top;
+    useEffect(()=>{
+        const fixedNavbarToTop = ()=>{
+            const currentScroll = window.scrollY;
+            if(currentScroll > 110){
+                setNavbarFixedTop(true);
+            }else{
+                setNavbarFixedTop(false)
+            }
+        }
+        window.addEventListener("scroll" ,fixedNavbarToTop)
+        return ()=>window.removeEventListener("scroll" ,fixedNavbarToTop)
+    },[])
 
     const handlerNavbarMenu = ()=>{
         setNavMenu(!navMenu)
@@ -17,7 +32,7 @@ function Navbar() {
     }
   return (
     <>
-        <section className={`${style.navBar} ${'d-lg-block d-none'}`}>
+        <section className={`${navbarFixedTop? style.nav_fixed : style.navBar} ${'d-lg-block d-none'}`}>
             <div className="containers">
                 <div className={style.navbar_wrapper}>
                     <div className={style.navbar_right}>
@@ -69,7 +84,7 @@ function Navbar() {
                 </div>
             </div>
         </section>
-        <section className={`${style.navbarRes} ${'d-block d-lg-none'}`}>
+        <section className={`${navbarFixedTop ? style.nav_fixed: style.navbarRes} ${'d-block d-lg-none'}`}>
             <div className="containers">
                 <div className={style.navbarRes_wrapper}>
                     <Link href='/' className={style.navbarRes_logo}>
