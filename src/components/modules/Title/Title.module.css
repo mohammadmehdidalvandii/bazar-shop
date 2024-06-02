@@ -1,0 +1,15 @@
+.title{
+    display: inline-block;
+    position: relative;
+    font-family: var(--danaBlack);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.title::after{
+    display: block;
+    width: 100%;
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--redColor);
+}
