@@ -14,6 +14,7 @@ function page() {
     <Discount/>
     <Latest/>
     <Advertise/>
+    <Latest/>
     <br /><br /><br /><br /><br />
     </>
   )
