@@ -13,6 +13,7 @@ function page() {
     <Advertise/>
     <Discount/>
     <Latest/>
+    <Advertise/>
     <br /><br /><br /><br /><br />
     </>
   )
