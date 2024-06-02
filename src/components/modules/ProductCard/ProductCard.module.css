@@ -1,12 +1,12 @@
 .productCard{
     display: block;
-    width: 100%;
+    max-width: 300px;
     padding: 1rem;
     background-color: var(--whiteColor);
     border-radius: 0.7rem;
 }
 .productCard_image{
-    max-width: 250px;
+    max-width: 100%;
 }
 .productCard_content{
     display: block;

@@ -46,9 +46,9 @@
 .latest_left{
     display: flex;
     align-items: center;
+    width: 80%;
 }
 .latest_left_wrapper{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+   display: block;
+   width: 100%;
 }
