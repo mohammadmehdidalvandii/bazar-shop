@@ -1,0 +1,36 @@
+.productCard{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--whiteColor);
+    border-radius: 0.7rem;
+}
+.productCard_image{
+    max-width: 250px;
+}
+.productCard_content{
+    display: block;
+    margin-top: 1rem;
+}
+.productCard_title{
+    font-family: var(--danaBold);
+    font-size: 1rem;
+    color: var(--primary);
+}
+.productCard_prices{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+}
+.productCard_price_number{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.productCard_price_text{
+    display: block;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
