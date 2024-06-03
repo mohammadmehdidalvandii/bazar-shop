@@ -1,3 +1,4 @@
+import Footer from '@/components/modules/Footer/Footer'
 import Navbar from '@/components/modules/Navbar/Navbar'
 import Advertise from '@/components/template/home/Advertise/Advertise'
 import Articles from '@/components/template/home/Articles/Articles'
@@ -20,7 +21,7 @@ function page() {
     <Discount/>
     <Brands/>
     <Articles/>
-    <br /><br /><br /><br /><br />
+    <Footer/>
     </>
   )
 }
