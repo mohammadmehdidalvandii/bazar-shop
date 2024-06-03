@@ -1,0 +1,27 @@
+.articles{
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+}
+.articles_wrapper{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 10px 7px var(--grayColor);
+    border-radius: 1rem;
+}
+.articles_link{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: var(--danaBold);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.articles_link:hover{
+    color: var(--secondary);
+}
+

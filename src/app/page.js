@@ -1,5 +1,6 @@
 import Navbar from '@/components/modules/Navbar/Navbar'
 import Advertise from '@/components/template/home/Advertise/Advertise'
+import Articles from '@/components/template/home/Articles/Articles'
 import Banner from '@/components/template/home/Banner/Banner'
 import Brands from '@/components/template/home/Brands/Brands'
 import Discount from '@/components/template/home/Discount/Discount'
@@ -18,6 +19,7 @@ function page() {
     <Latest/>
     <Discount/>
     <Brands/>
+    <Articles/>
     <br /><br /><br /><br /><br />
     </>
   )
