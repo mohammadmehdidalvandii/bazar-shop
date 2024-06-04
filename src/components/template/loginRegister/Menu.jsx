@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import style from './Menu.module.css';
+import Login from './Login';
 
 
 function Menu() {
@@ -35,7 +36,7 @@ function Menu() {
                 <div className="row mt-3">
                     <div className="col-12">
                     {ChangeMenu === "Login" &&(
-                        <h1>this is login</h1>
+                        <Login/>
                     )}
                     {ChangeMenu === "Register" &&(
                         <h1>this is Register</h1>
