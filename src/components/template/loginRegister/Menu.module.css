@@ -1,0 +1,33 @@
+.menu{
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+}
+.menu_wrapper{
+    display: block;
+    max-width: 500px;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 7px var(--shadowColor);
+}
+.menu_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 2.5rem;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: var(--blueColor);
+    font-family: var(--dana-bold);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--whiteColor);
+    transition: all 0.4s ease-out;
+}
+.menu_button:hover{
+    background-color: var(--secondary);
+}
