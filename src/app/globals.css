@@ -77,3 +77,46 @@ body{
   color: var(--redColor);
   background-color: var(--whiteColor);
 }
+/* <<<< style form >>>> */
+.form_title{
+  display: block;
+  font-family: var(--danaBlack);
+  font-size: 1.5rem;
+}
+.form{
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+.form_input{
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: 1px solid var(--blueColor);
+  border-radius: 0.4rem;
+  padding-right: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+.form_submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--blueColor);
+  font-family: var(--danaBold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--whiteColor);
+  transition: all 0.4s ease-out;
+}
+.form_submit:hover{
+  background-color: var(--secondary);
+}
