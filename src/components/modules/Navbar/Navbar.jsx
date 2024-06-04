@@ -4,11 +4,20 @@ import style from './Navbar.module.css';
 import Link from 'next/link';
 import { MdSearch , MdShoppingCart } from "react-icons/md";
 import { FaUser , FaBars ,FaTimesCircle} from "react-icons/fa";
+import { usePathname } from 'next/navigation';
 
 
 function Navbar() {
+    const pathName = usePathname();
     const [navMenu , setNavMenu] = useState(false);
-    const [navbarFixedTop , setNavbarFixedTop] = useState(false)
+    const [navbarFixedTop , setNavbarFixedTop] = useState(false);  
+    const [routeName  , setRouteName] = useState('/');
+
+    // handler Change Menu 
+    useEffect(()=>{
+        const path_name = pathName;
+        setRouteName(path_name);
+    },[pathName])
 
     // handler navbar Fixed To Top;
     useEffect(()=>{
@@ -75,10 +84,10 @@ function Navbar() {
                     |
                     <ul className={style.navbar_items}>
                         <li className={style.navbar_item}>
-                            <Link href='/' className={style.navbar_item_link}>خانه</Link>
+                            <Link href='/' className={routeName === '/' ? style.navbarActive: style.navbar_item_link}>خانه</Link>
                         </li>
                         <li className={style.navbar_item}>
-                            <Link href='/' className={style.navbar_item_link}>درباره ما</Link>
+                            <Link href='/About' className={routeName === '/About'? style.navbarActive :  style.navbar_item_link}>درباره ما</Link>
                         </li>
                     </ul>
                 </div>
@@ -116,10 +125,10 @@ function Navbar() {
                          </span>
                          <ul className={style.navbarRes_items}>
                              <li className={style.navbarRes_item}>
-                                 <Link href='/' className={style.navbarRes_item_link}>خانه</Link>
+                                 <Link href='/' className={routeName === '/' ? style.navbarActive : style.navbarRes_item_link}>خانه</Link>
                              </li>
                              <li className={style.navbarRes_item}>
-                                 <Link href='/' className={style.navbarRes_item_link}>درباره ما</Link>
+                                 <Link href='/About' className={routeName === '/About' ? style.navbarActive :    style.navbarRes_item_link}>درباره ما</Link>
                              </li>
                          </ul>
                          <ul className={style.navbarRes_items}>
