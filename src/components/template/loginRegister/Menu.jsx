@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import style from './Menu.module.css';
 import Login from './Login';
+import Register from './Register';
 
 
 function Menu() {
@@ -39,7 +40,7 @@ function Menu() {
                         <Login/>
                     )}
                     {ChangeMenu === "Register" &&(
-                        <h1>this is Register</h1>
+                        <Register/>
                     )}
                     </div>
                 </div>
