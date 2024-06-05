@@ -1,0 +1,136 @@
+.basket{
+    display: block;
+    width: 100%;
+    margin-top: 3rem ;
+}
+.basket_wrapper{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 10px 7px var(--shadowColor);
+}
+
+.basket_empty{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.basket_empty_icon{
+    font-size: 12rem;
+}
+.basket_empty_title{
+    display: block;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.basket_empty_desc{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--grayColor);
+    padding: 0.2rem 0.4rem;
+}
+.basket_empty_link{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.4s ease-out;
+}
+.basket_empty_link:hover{
+    color: var(--secondary);
+    text-decoration: dotted;
+}
+
+.basket_items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 1rem 0.4rem;
+    border: 1px solid var(--grayColor);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.basket_item{
+    display: block !important;
+}
+.basket_item_img{
+    width: 100px;   
+}
+.basket_item_title{
+    display: block;
+    margin-bottom: 0.6rem;
+    font-family: var(--danaBold);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--redColor);
+}
+.basket_item_name{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.basket_item_price{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.basket_item_count{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.basket_bill{
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--secondary);
+    padding-top: 2rem;
+}
+.bill_items{
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.bill_item{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+}
+.bill_item_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 2.5rem;
+    background-color: var(--grayColor);
+    margin-left: 1rem;
+    font-family: var(--danaBold);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+.bill_item_text{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--grayColor);
+    font-family: var(--danaBold);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.bill_item_pay{
+    width: 100%;
+}
