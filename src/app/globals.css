@@ -45,7 +45,7 @@ body{
   font-style: normal;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--bgColor);
+  background-color: var(--bgColor) !important;
 }
 /* <<<< Containers >>>> */
 .containers{

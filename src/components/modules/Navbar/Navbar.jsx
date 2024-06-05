@@ -60,7 +60,7 @@ function Navbar() {
                             /
                             <span className={style.navbar_loginRegister_text}>عضویت</span>
                         </Link>
-                        <Link href='/' className={style.navbar_basket}>
+                        <Link href='/Shopping' className={style.navbar_basket}>
                             <span className={style.navbar_basket_number}>0</span>
                             <span className={style.navbar_basket_icon}><MdShoppingCart/></span>
                         </Link>
@@ -107,7 +107,7 @@ function Navbar() {
                             /
                             <span className={style.navbar_loginRegister_text}>عضویت</span>
                         </Link>
-                        <Link href='/' className={style.navbar_basket}>
+                        <Link href='/Shopping' className={style.navbar_basket}>
                             <span className={style.navbar_basket_number}>0</span>
                             <span className={style.navbar_basket_icon}><MdShoppingCart/></span>
                         </Link>
