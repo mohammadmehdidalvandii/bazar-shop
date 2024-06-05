@@ -1,0 +1,35 @@
+.breadcrumb{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+}
+.breadcrumb_wrapper{
+    display: flex;
+    align-items: center;
+    background-color: var(--whiteColor);
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px 7px var(--shadowColor);
+    border-radius: 0.6rem;
+}
+.Breadcrumb_link{
+    display: block;
+    text-decoration: none;
+    padding-left: 2rem;
+    font-family: var(--danaBlock);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    transition: all 0.4s ease-out;
+}
+.Breadcrumb_link:hover{
+    color: var(--secondary);
+}
+.breadcrumb_text{
+    font-family: var(--danaBlock);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    padding-right: 2rem;
+}
