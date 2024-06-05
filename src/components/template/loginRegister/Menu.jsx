@@ -22,13 +22,13 @@ function Menu() {
                                       <button className={style.menu_button}
                                       onClick={()=>handlerChangeMenu("Register")}
                                   >
-                                      ورود
+                                    ثبت نام
                                   </button>
                         ):(
                             <button className={style.menu_button}
                             onClick={()=>handlerChangeMenu("Login")}
                         >
-                            ثبت نام
+                            ورود
                         </button>
                         )} 
                         </div>
