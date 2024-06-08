@@ -143,3 +143,21 @@ transition: all 0.4s ease-out;
 .form_submit:hover{
   background-color: var(--secondary);
 }
+
+/* <<<< shop >>>> */
+.shop_Wrapper{
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--whiteColor);
+  box-shadow: 0 0 10px 7px var(--shadowColor);
+  border-radius: 0.6rem;
+}
+.shop_title{
+  display: block;
+  font-family: var(--danaBold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
