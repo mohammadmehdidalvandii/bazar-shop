@@ -1,0 +1,11 @@
+.products{
+    display: block;
+    width: 100%;
+}
+.products_title{
+    display: block;
+    padding-bottom: 1rem;   
+    font-family: var(--danaBlack);
+    font-size: 2rem;
+    border-bottom: 1px solid var(--secondary);
+}
