@@ -1,0 +1,103 @@
+.info{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.info_content{
+    display: block;
+    width: 100%;
+}
+.info_bigTitle{
+    display: block;
+    font-family: var(--font-black);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+.info_smallTitle{
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--grayColor);
+    background-color: var(--secondary);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.info_category{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.info_category_title{
+    display: block;
+    font-family: var(--font-bold);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.info_category_text{
+    display: block;
+    text-decoration: underline;
+    margin: 0 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blueColor);
+}
+.info_brand{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+.info_title{
+    display: block;
+    display: block;
+    font-family: var(--font-bold);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.info_text{
+    display: block;
+    text-decoration: underline;
+    margin: 0 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blueColor);
+}
+.info_color{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+.info_items{
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+.info_item{
+    display: flex;  
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.info_item_title{
+    font-family: var(--font-bold);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.info_item_icon{
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-left: 0.4rem;
+}   
+.info_item_text{
+    display: block;
+    margin: 0 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
