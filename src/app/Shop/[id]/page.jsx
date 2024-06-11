@@ -5,6 +5,7 @@ import Detail from "@/components/template/Shop/Detail/Detail";
 import Gallery from "@/components/template/Shop/Gallery/Gallery";
 import Info from "@/components/template/Shop/Info/Info";
 import Related from "@/components/template/Shop/Related/Related";
+import Tab from "@/components/template/Shop/Tab/Tab";
 import React from "react";
 
 function page() {
@@ -23,6 +24,18 @@ function page() {
             </div>
             <div className="col-lg-3 col-md-12 col-sm-12">
               <Detail />
+            </div>
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-lg-9 col-md-9 col-sm-12">
+            <div className="shop_Wrapper">
+              <Tab/>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-12">
+            <div className="shop_Wrapper">
+              this is tab
             </div>
           </div>
         </div>
