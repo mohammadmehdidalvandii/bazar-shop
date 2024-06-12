@@ -25,10 +25,6 @@ function Tab() {
                         <span className={style.tab_btn_icon}><FaArrowAltCircleUp/></span>
                         <span className={style.tab_btn_text}>مشخصات</span>
                     </button>
-                    <button className={tabMenu === "comment" ? style.tab_btnActive :style.tab_btn} onClick={()=>handlerTabMenu("comment")}>
-                        <span className={style.tab_btn_icon}><FaMessage/></span>
-                        <span className={style.tab_btn_text}>دیدگاه</span>
-                    </button>
                 </div>
             </div>
         </div>
@@ -36,7 +32,6 @@ function Tab() {
             <div className="col-12">
                 {tabMenu === "details" && (<Details/>)}
                 {tabMenu === "info" && (<Specs/>)}
-                {tabMenu === "comment" && (<h1>Comment</h1>)}
             </div>
         </div>
     </section>
