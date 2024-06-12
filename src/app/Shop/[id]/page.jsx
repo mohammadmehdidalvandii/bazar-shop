@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/modules/Breadcrumb/Breadcrumb";
 import Footer from "@/components/modules/Footer/Footer";
 import Navbar from "@/components/modules/Navbar/Navbar";
+import AddBasket from "@/components/template/Shop/AddBasket/AddBasket";
 import Detail from "@/components/template/Shop/Detail/Detail";
 import Gallery from "@/components/template/Shop/Gallery/Gallery";
 import Info from "@/components/template/Shop/Info/Info";
@@ -35,7 +36,7 @@ function page() {
           </div>
           <div className="col-lg-3 col-md-3 col-sm-12">
             <div className="shop_Wrapper">
-              this is tab
+              <AddBasket/>
             </div>
           </div>
         </div>

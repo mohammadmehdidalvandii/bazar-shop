@@ -1,0 +1,37 @@
+.addBasket{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--grayColor);
+}
+.addBasket_items{
+    display: block;
+}
+.addBasket_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.addBasket_img{
+    display: block;
+    width: 100px;
+}
+.addBasket_name{
+    display: block;
+    font-family: var(--danaBlack);
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary );
+}
+.addBasket_price{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--danaBold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.addBasket_btn{
+    width: 100%;
+}
