@@ -10,6 +10,7 @@ function Details() {
         </div>
       </div>
       <div className="row mt-3">
+        <div className="col-12">
         <div className={style.details_wrapper}>
           <p className={style.details_desc}>
             یخجال و فریزر «امرسان» مدل «FN15D-RH15D» محصولی کارآمد و باکیفیت از
@@ -31,9 +32,11 @@ function Details() {
             انجماد سریع نیز از دیگر مزایای این مدل است که برای سرمایش مواد تازه
             خریداری شده بسیار کاربردی است.
           </p>
+        </div>
         </div>
       </div>
       <div className="row mt-3">
+        <div className="col-12">
         <div className={style.details_wrapper}>
           <p className={style.details_desc}>
             یخجال و فریزر «امرسان» مدل «FN15D-RH15D» محصولی کارآمد و باکیفیت از
@@ -56,7 +59,9 @@ function Details() {
             خریداری شده بسیار کاربردی است.
           </p>
         </div>
+        </div>
       </div>
+     
     </section>
   );
 }
