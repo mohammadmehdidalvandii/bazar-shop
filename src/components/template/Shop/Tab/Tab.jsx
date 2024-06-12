@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import style from './Tab.module.css';
 import { FaInfoCircle , FaArrowAltCircleUp} from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import Details from '../Details/Details';
 
 
 function Tab() {
@@ -32,7 +33,7 @@ function Tab() {
         </div>
         <div className="row mt-4">
             <div className="col-12">
-                {tabMenu === "details" && (<h1>Details</h1>)}
+                {tabMenu === "details" && (<Details/>)}
                 {tabMenu === "info" && (<h1>Info</h1>)}
                 {tabMenu === "comment" && (<h1>Comment</h1>)}
             </div>
